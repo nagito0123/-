@@ -1,0 +1,63 @@
+<html>
+<head>
+<script src="2.js" defer></script>
+</head>
+<body onload="reCalc();">
+<table>
+    <thead>
+        <tr>
+            <th>問題</th>
+            <th>答え</th>
+            <th>回答</th>
+            <th>差</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>１問目</th>
+            <td>
+                <input type="number" id="tanka_001" name="tanka_001" onchange="reCalc();">
+            </td>
+            <td>
+                <input type="number" id="suryo_001" name="suryo_001" onchange="reCalc();">
+            </td>
+            <td>
+                <input type="number" id="yokokei_001" name="yokokei_001" readonly value="0">
+            </td>
+        </tr>
+        <tr>
+            <th>2問目</th>
+            <td>
+                <input type="number" id="tanka_002" name="tanka_002" onchange="reCalc();">
+            </td>
+            <td>
+                <input type="number" id="suryo_002" name="suryo_002" onchange="reCalc();">
+            </td>
+            <td>
+                <input type="number" id="yokokei_002" name="yokokei_002" readonly value="0">
+            </td>
+        </tr>
+        <tr>
+            <th>3問目</th>
+            <td>
+                <input type="number" id="tanka_003" name="tanka_003" onchange="reCalc();">
+            </td>
+            <td>
+                <input type="number" id="suryo_003" name="suryo_003" onchange="reCalc();">
+            </td>
+            <td>
+                <input type="number" id="yokokei_003" name="yokokei_003" readonly value="0">
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">残り風船個数</th>
+            <td>
+                <input type="number" id="total" name="total" readonly value="0">
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
